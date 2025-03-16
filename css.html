@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        font-size: 3rem;
+      }
+
+      .highlite {
+        background-color: red;
+        width: 10cap;
+        margin-top: 2em;
+      }
+
+      #Header2 {
+        padding: 10%;
+      }
+      .highlite,
+      h1,
+      #Header2,
+      span {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      /* Комбинатор по потомку и по прямому потомку(>), */
+      div .greet {
+        background: whitesmoke;
+      }
+
+      div > h3 {
+        background-color: brown;
+      }
+      /* комбинатор соседднего родства(следующий за ним) */
+      #Div2 + p{
+        color: aqua;
+      }
+      /*комбинатор общего родства */
+      .greet ~ p{
+        color: green;
+        font-style: italic;
+        font-size: 2rem;
+        line-height: 1.8;
+        text-transform: capitalize;
+        text-decoration: line-through;
+        text-decoration-style: dotted;
+        text-align: right;
+        text-align: justify;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      #BorderDiv {
+        width: 100px;
+        height: 100px;
+        padding: 5px 10px 15px 20px;
+        border: 15px solid blue;
+        background-color: yellow;
+        background: green;
+        margin: 125px;
+        box-sizing: border-box;
+      }
+
+      p {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <p class="greet">Параграф</p>
+        <p>Параграф</p>
+        <p>Параграф</p>
+        <p class="greet">Параграф</p>
+        <h1>Заголовок1</h1>
+        <p class="highlite">Параграф</p>
+        <span>Polsxsaxaxsaxsaxsaxsaxsa</span>
+        <h2 id="Header2">Заголовок2</h2>
+      </div>
+    </div>
+    <div>
+        <h3 id="Div2">Заголовок3</h2>
+        <p>Параграф</p>
+        <p>Параграф</p>
+        <p>Параграф</p>
+        <p>Параграф</p>
+      </div>
+    <div>
+        <div id="BorderDiv">
+
+        </div>
+        <button>BBABABABAB</button>
+        <input/>
+        <select>aaaa,sssssss</select>
+    </div>
+   
+  </body>
+</html>
